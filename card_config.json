@@ -1,0 +1,191 @@
+{
+  "greeting_messages": {
+    "enabled": true,
+    "path": "greeting_messages.json",
+    "use_random": true
+  },
+  "photo_base_url": "https://hrm.trna.com.vn/",
+  "template": {
+    "path": "templates/card_template.png",
+    "size": {
+      "width": 795,
+      "height": 273
+    },
+    "resize_mode": "force"
+  },
+  "photo": {
+    "source_field": "photo_path",
+    "placement": {
+      "x": 234,
+      "y": 65,
+      "width": 145,
+      "height": 145
+    },
+    "crop": {
+      "type": "center_square"
+    },
+    "mask": {
+      "type": "circle",
+      "feather": 0,
+      "inset": 0
+    }
+  },
+  "fonts": {
+    "default": {
+      "path": "C:/Windows/Fonts/segoeui.ttf"
+    },
+    "bold": {
+      "path": "C:/Windows/Fonts/segoeuib.ttf"
+    },
+    "semi_bold": {
+      "path": "C:/Windows/Fonts/segoeui.ttf"
+    }
+  },
+  "colors": {
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "accent": "#FF6B6B",
+    "gold": "#FFD700",
+    "accent_dark": "rgba(255, 107, 107, 0.8)"
+  },
+  "texts": [
+    {
+      "id": "greeting",
+      "text": "Happy Birthday!",
+      "box": {
+        "x": 410,
+        "y": 55,
+        "width": 320,
+        "height": 150
+      },
+      "font_ref": "bold",
+      "color_ref": "black",
+      "size": 17,
+      "wrap": true,
+      "align": "right",
+      "valign": "top",
+      "line_spacing": 1.5,
+      "fit": {
+        "mode": "shrink_to_fit",
+        "min_size": 24,
+        "max_lines": 4
+      },
+      "stroke": {
+        "enabled": false,
+        "width": 2,
+        "color_ref": "black"
+      }
+    },
+    {
+      "id": "name",
+      "text": "{full_name}",
+      "box": {
+        "x": 410,
+        "y": 55,
+        "width": 320,
+        "height": 150
+      },
+      "font_ref": "bold",
+      "color_ref": "accent",
+      "size": 15,
+      "transform": "vietnamese_name_short",
+      "wrap": true,
+      "align": "left",
+      "valign": "top",
+      "line_spacing": 1.5,
+      "fit": {
+        "mode": "shrink_to_fit",
+        "min_size": 24,
+        "max_lines": 3
+      },
+      "stroke": {
+        "enabled": false,
+        "width": 0,
+        "color_ref": "white"
+      }
+    },
+    {
+      "id": "birthday_date",
+      "text": "{birthday:%B %d, %Y}",
+      "box": {
+        "x": 410,
+        "y": 75,
+        "width": 320,
+        "height": 150
+      },
+      "font_ref": "default",
+      "color_ref": "black",
+      "size": 10,
+      "wrap": true,
+      "align": "left",
+      "valign": "top",
+      "line_spacing": 1.5,
+      "fit": {
+        "mode": "shrink_to_fit",
+        "min_size": 12,
+        "max_lines": 2
+      }
+    },
+    {
+      "id": "years_with_company",
+      "text": "{years_with_company} years together, since {join_year}",
+      "box": {
+        "x": 410,
+        "y": 90,
+        "width": 320,
+        "height": 150
+      },
+      "font_ref": "default",
+      "color_ref": "black",
+      "size": 10,
+      "wrap": true,
+      "align": "left",
+      "valign": "top",
+      "line_spacing": 1.5,
+      "fit": {
+        "mode": "shrink_to_fit",
+        "min_size": 10,
+        "max_lines": 2
+      }
+    },
+    {
+      "id": "custom_message",
+      "text": "{greeting_message}",
+      "box": {
+        "x": 410,
+        "y": 115,
+        "width": 320,
+        "height": 180
+      },
+      "font_ref": "default",
+      "color_ref": "black",
+      "size": 16,
+      "wrap": true,
+      "align": "center",
+      "valign": "top",
+      "line_spacing": 1.5,
+      "fit": {
+        "mode": "shrink_to_fit",
+        "min_size": 10,
+        "max_lines": 5
+      }
+    },
+    {
+      "id": "signature",
+      "text": "- DC34 PUB -",
+      "box": {
+        "x": 500,
+        "y": 210,
+        "width": 230,
+        "height": 30
+      },
+      "font_ref": "default",
+      "color_ref": "black",
+      "size": 14,
+      "wrap": false,
+      "align": "right",
+      "valign": "top",
+      "line_spacing": 1.2
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "email": {
+    "enabled": true,
+    "recipient": [
+      "abc@trna.com.vn"
+    ],
+    "subject": "[🎂 Happy Birthday] DC34 PUB Team",
+    "sender_name": "DC34 PUB Team",
+    "sender_email": "abc@trna.com.vn",
+    "alt_sender_email": "dc34_pub@trna.com.vn",
+    "use_alt_sender": false,
+    "cc_birthday_people": false,
+    "additional_cc": [
+      "abc@trna.com.vn"
+    ]
+  },
+  "template": {
+    "header_emoji": "🎂",
+    "header_text": "Happy Birthday!",
+    "greeting": "Dear Birthday Person,",
+    "greeting_secondary": "We're delighted to celebrate your special day! 🎉",
+    "footer_text": "Wishing you a fantastic day filled with joy and wonderful moments!",
+    "closing": "Warm regards,",
+    "sender": "DC34 PUB Team",
+    "system_footer": "This is an automated birthday greeting from DC34 PUB System"
+  },
+  "styling": {
+    "header_color": "#000",
+    "header_size": "36px",
+    "body_color": "#000",
+    "background_color": "#fff",
+    "container_background": "white",
+    "footer_color": "",
+    "border_color": "",
+    "card_border_radius": "",
+    "card_shadow": ""
+  }
+}
