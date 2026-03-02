@@ -539,7 +539,7 @@ def render_card(
             Returns:
                 (years_with_company: str, join_year: str)
             """
-            date_join_str = member.get('Date Join company', '')
+            date_join_str = member.get('Date Join', '')
             if not date_join_str:
                 return ("", "")
             
