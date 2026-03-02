@@ -48,7 +48,7 @@ The system runs automatically at **7:00 AM** every day via Windows Task Schedule
 
 ### Setup
 
-1. Extract the project to: `d:\PlayGround\birthdaycard\birthday-bot`
+1. Extract the project to: `d:\PlayGround\birthdaycard\birtdaygreeting`
 
 2. Install Python dependencies:
    ```bash
@@ -57,7 +57,7 @@ The system runs automatically at **7:00 AM** every day via Windows Task Schedule
 
 3. Configure the scheduler (as Administrator):
    ```powershell
-   schtasks /create /tn "Birthday Card Sender" /tr "D:\Program Files\Python\Python314\python.exe d:\PlayGround\birthdaycard\birthday-bot\send_via_outlook.py" /sc daily /st 07:00 /rl highest /f
+   schtasks /create /tn "Birthday Card Sender" /tr "D:\Program Files\Python\Python314\python.exe d:\PlayGround\birthdaycard\birtdaygreeting\send_via_outlook.py" /sc daily /st 07:00 /rl highest /f
    ```
 
 4. (Optional) Verify installation:
@@ -251,7 +251,7 @@ python send_via_outlook.py  # Test manually
 
 **Python Execution**:
 - Interpreter: `D:\Program Files\Python\Python314\python.exe`
-- Working Directory: `d:\PlayGround\birthdaycard\birthday-bot`
+- Working Directory: `d:\PlayGround\birthdaycard\birtdaygreeting`
 
 **Email System**:
 - Uses Windows Outlook COM interface (no SMTP login needed)
